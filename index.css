@@ -11,7 +11,6 @@ body {
   padding: 24px;
   background: #f5f5f5;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  place-items: center;
 }
 
 .testimonials {
@@ -21,10 +20,12 @@ body {
   gap: 35px;
   margin: auto;
 }
+
 .card {
   padding: 28px 32px;
   border-radius: 16px;
 }
+
 .person {
   display: flex;
   align-items: center;
@@ -58,6 +59,7 @@ body {
   line-height: 1;
   color: #ffffff;
 }
+
 .experience-kira {
   margin-bottom: 16px;
   font-size: 18px;
@@ -98,6 +100,7 @@ body {
   color: #fff;
   background: #19212e;
 }
+
 @media (max-width: 900px) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
