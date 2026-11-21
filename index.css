@@ -101,7 +101,6 @@ body {
   background: #19212e;
 }
 
-/* Tablet layout */
 @media (max-width: 900px) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
@@ -123,7 +122,6 @@ body {
   }
 }
 
-/* Mobile layout */
 @media (max-width: 560px) {
   body {
     place-items: start center;
