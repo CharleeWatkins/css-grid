@@ -11,13 +11,12 @@ body {
   padding: 24px;
   background: #f5f5f5;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  place-items: center;
 }
 
 .testimonials {
   width: min(1110px, 100%);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 35px;
   margin: auto;
 }
@@ -26,7 +25,8 @@ body {
   border-radius: 16px;
 }
 .person {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 14px;
   margin-bottom: 19px;
@@ -71,7 +71,6 @@ body {
 }
 
 .card-one {
-  grid-column: span 2;
   color: #fff;
   background: #733fc8;
 }
@@ -82,8 +81,6 @@ body {
 }
 
 .card-three {
-  grid-column: 4;
-  grid-row: 1 / span 2;
   color: #48556a;
   background: #fff;
 }
@@ -97,43 +94,4 @@ body {
   grid-column: span 2;
   color: #fff;
   background: #19212e;
-}
-@media (max-width: 900px) {
-  .testimonials {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-one,
-  .card-two,
-  .card-three,
-  .card-four,
-  .card-five {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .card-one,
-  .card-three,
-  .card-five {
-    grid-column: span 2;
-  }
-}
-
-@media (max-width: 560px) {
-  body {
-    place-items: start center;
-  }
-
-  .testimonials {
-    grid-template-columns: 1fr;
-  }
-
-  .card-one,
-  .card-two,
-  .card-three,
-  .card-four,
-  .card-five {
-    grid-column: auto;
-    grid-row: auto;
-  }
 }
